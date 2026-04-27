@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Take Back Your Thyroid — Pre-Launch Bundle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          teal: { DEFAULT: '#3A6B7E', deep: '#2C5564', soft: '#5A8696' },
+          gold: { DEFAULT: '#D9A23D', light: '#E8BC68', deep: '#B8862B' },
+          cream: { DEFAULT: '#F5EFE6', warm: '#FAF6EF' },
+          ink: { DEFAULT: '#1F2A2E', soft: '#4A5560' },
+        },
+        fontFamily: {
+          serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  body { background:#F5EFE6; color:#1F2A2E; font-family:'Inter',sans-serif; }
+  .font-serif { font-family:'Cormorant Garamond',Georgia,serif; letter-spacing:-0.01em; }
+  .eyebrow { font-family:'Inter'; text-transform:uppercase; letter-spacing:0.18em; font-weight:600; font-size:12px; }
+  .gold-btn {
+    background: linear-gradient(180deg, #E8BC68 0%, #D9A23D 100%);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 12px 28px -8px rgba(217,162,61,0.55), 0 2px 4px rgba(31,42,46,0.08);
+    transition: all 0.25s ease;
+  }
+  .gold-btn:hover { transform: translateY(-1px); box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset, 0 18px 36px -8px rgba(217,162,61,0.7), 0 4px 8px rgba(31,42,46,0.12); }
+  .book-tilt { transform: rotate(-6deg) perspective(900px) rotateY(8deg); transition: transform 0.6s ease; }
+  .book-tilt:hover { transform: rotate(-3deg) perspective(900px) rotateY(4deg); }
+  .book-shadow { filter: drop-shadow(0 30px 40px rgba(31,42,46,0.25)) drop-shadow(0 8px 12px rgba(31,42,46,0.15)); }
+  .leaf-divider { display:flex; align-items:center; gap:16px; color:#D9A23D; }
+  .leaf-divider::before,.leaf-divider::after { content:''; flex:1; height:1px; background:linear-gradient(90deg,transparent,#D9A23D,transparent); }
+  .card-glow { box-shadow: 0 30px 60px -20px rgba(31,42,46,0.18), 0 12px 24px -8px rgba(31,42,46,0.08); }
+  .quote-mark { font-family:'Cormorant Garamond'; font-size:80px; line-height:0.6; color:#D9A23D; font-weight:600; }
+  .stat-num { font-family:'Cormorant Garamond'; font-weight:600; color:#D9A23D; }
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(180deg); }
+  .chev { transition: transform 0.25s ease; }
+  /* book cover SVG colors echo the real cover */
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="bg-teal text-cream text-center text-xs sm:text-sm font-medium py-2 px-4 tracking-wider">
+  <span class="text-gold">✦</span> LIMITED PRE-LAUNCH OFFER — 90% OFF + FREE BOOK SHIPPED AT LAUNCH <span class="text-gold">✦</span>
+</div>
+
+<!-- NAV -->
+<nav class="absolute z-30 w-full">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 py-6 flex items-center justify-between">
+    <a href="#" class="font-serif text-2xl text-teal-deep">
+      Take Back Your <span class="text-gold font-semibold">Thyroid</span>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-ink-soft">
+      <a href="#offer" class="hover:text-teal">The Offer</a>
+      <a href="#about" class="hover:text-teal">About McCall</a>
+      <a href="#faq" class="hover:text-teal">FAQ</a>
+      <a href="#offer" class="gold-btn text-white px-5 py-2.5 rounded-full text-sm font-semibold tracking-wide">Get the Bundle →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="relative overflow-hidden bg-cream pt-28 lg:pt-36 pb-20 lg:pb-28">
+  <!-- decorative leaf -->
+  <svg class="absolute -left-10 top-40 w-72 opacity-20 text-gold" viewBox="0 0 200 200" fill="currentColor">
+    <path d="M100 20c-30 30-50 60-50 100s30 60 50 60 50-20 50-60-20-70-50-100zm0 30c20 25 35 50 35 75s-15 40-35 40-35-15-35-40 15-50 35-75z"/>
+  </svg>
+  <svg class="absolute -right-16 bottom-0 w-96 opacity-15 text-teal" viewBox="0 0 200 200" fill="currentColor">
+    <path d="M100 20c-30 30-50 60-50 100s30 60 50 60 50-20 50-60-20-70-50-100z"/>
+  </svg>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <!-- Copy -->
+    <div class="lg:col-span-7">
+      <div class="eyebrow text-teal mb-5 flex items-center gap-2">
+        <span class="inline-block w-6 h-px bg-gold"></span>
+        Foreword by Dr. Izabella Wentz — NYT Bestselling Thyroid Pharmacist
+      </div>
+      <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.02] text-teal-deep font-semibold">
+        Take Back<br/>Your <span class="text-gold uppercase tracking-tight">Thyroid</span>.
+      </h1>
+      <p class="font-serif italic text-2xl lg:text-[26px] leading-snug text-ink-soft mt-6 max-w-xl">
+        The science-based plan to restore your energy, balance your hormones, and reclaim your health — plus the full course that brings it to life.
+      </p>
+      <p class="text-lg text-ink-soft mt-6 max-w-xl leading-relaxed">
+        Get my <span class="font-semibold text-ink">Thyroid Empowered Course</span> <span class="text-ink-soft">($399 value)</span> for just <span class="font-semibold text-ink">$39</span> today — and I'll ship you a free copy of my brand-new book the moment it launches.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
+        <a href="#offer" class="gold-btn text-white px-8 py-4 rounded-full text-base font-semibold tracking-wide inline-flex items-center justify-center gap-2">
+          Get the Course + Free Book — $39 →
+        </a>
+        <div class="text-sm text-ink-soft">
+          <div class="flex items-center gap-2"><span class="text-gold">✓</span> Instant course access</div>
+          <div class="flex items-center gap-2"><span class="text-gold">✓</span> Free book shipped at launch</div>
+        </div>
+      </div>
+
+      <div class="mt-10 pt-8 border-t border-ink/10 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-ink-soft">
+        <div class="flex items-center gap-2"><span class="stat-num text-2xl">15+</span> years in practice</div>
+        <div class="w-px h-6 bg-ink/15 hidden sm:block"></div>
+        <div class="flex items-center gap-2"><span class="stat-num text-2xl">1,000s</span> patients restored</div>
+        <div class="w-px h-6 bg-ink/15 hidden sm:block"></div>
+        <div class="flex items-center gap-2"><span class="stat-num text-2xl">M+</span> reached online</div>
+      </div>
+    </div>
+
+    <!-- Book Visual -->
+    <div class="lg:col-span-5 relative flex items-center justify-center">
+      <div class="absolute inset-0 bg-gradient-radial from-gold/20 via-transparent to-transparent blur-3xl"></div>
+      <div class="relative book-tilt book-shadow">
+        <!-- Real book cover -->
+        <img src="book-cover.png" alt="Take Back Your Thyroid by McCall McPherson, PA-C — Foreword by Dr. Izabella Wentz" class="w-72 sm:w-80 lg:w-[360px] rounded-sm" />
+
+        <!-- Floating "course" card -->
+        <div class="absolute -bottom-8 -left-12 hidden sm:block bg-white rounded-xl card-glow p-3 w-48 rotate-6">
+          <div class="bg-gradient-to-br from-teal to-teal-deep rounded-lg h-20 flex items-center justify-center">
+            <span class="text-cream font-serif text-lg">Thyroid Empowered</span>
+          </div>
+          <div class="px-1 pt-2 pb-1">
+            <div class="text-[10px] uppercase tracking-widest text-gold font-semibold">Module 01</div>
+            <div class="text-xs text-ink mt-0.5 leading-tight">Reading your labs like a specialist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM SECTION -->
+<section class="bg-cream-warm py-20 lg:py-28">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+    <div class="eyebrow text-teal mb-4">You Are Not Imagining This</div>
+    <h2 class="font-serif text-4xl lg:text-5xl text-teal-deep font-semibold leading-tight">
+      Your labs are "normal."<br/>You feel anything but.
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-5 mt-14 text-left">
+      <div class="bg-white rounded-2xl p-7 card-glow">
+        <div class="quote-mark mb-2">"</div>
+        <p class="font-serif text-xl text-ink leading-snug -mt-2">Your TSH is in range — everything looks fine.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow">
+        <div class="quote-mark mb-2">"</div>
+        <p class="font-serif text-xl text-ink leading-snug -mt-2">It's just stress. Try to lose a little weight.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow">
+        <div class="quote-mark mb-2">"</div>
+        <p class="font-serif text-xl text-ink leading-snug -mt-2">Here's your levothyroxine. See you in a year.</p>
+      </div>
+    </div>
+
+    <p class="mt-14 text-lg text-ink-soft max-w-2xl mx-auto leading-relaxed">
+      Meanwhile, you're exhausted by 2 p.m. Your hair is falling out. Your brain is foggy. You've gained weight you can't explain — and lost a part of yourself you can't quite name.
+    </p>
+    <p class="mt-6 font-serif italic text-2xl text-teal-deep max-w-2xl mx-auto">
+      You are not crazy. You are not lazy. And you are not getting the care you deserve.
+    </p>
+  </div>
+</section>
+
+<!-- OFFER STACK -->
+<section id="offer" class="bg-cream py-20 lg:py-28 relative overflow-hidden">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10 text-center">
+    <div class="leaf-divider mb-8"><span class="text-2xl">❦</span></div>
+    <div class="inline-flex items-center gap-2 bg-gold/15 border border-gold/40 text-gold-deep rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest mb-5">
+      <span class="text-gold">✦</span> Pre-launch pricing ends at launch <span class="text-gold">✦</span>
+    </div>
+    <div class="eyebrow text-teal mb-3">The Pre-Launch Bundle</div>
+    <h2 class="font-serif text-4xl lg:text-5xl text-teal-deep font-semibold leading-tight">
+      Everything you need to take<br/>your thyroid back — for $39.
+    </h2>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-6 lg:px-10 mt-12">
+    <div class="bg-cream-warm rounded-3xl p-8 lg:p-12 card-glow border-2 border-gold/30">
+
+      <!-- Item 1 -->
+      <div class="flex gap-5 pb-8 border-b border-ink/10">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-teal/10 flex items-center justify-center text-3xl">🧠</div>
+        <div class="flex-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-serif text-2xl text-teal-deep font-semibold">Thyroid Empowered — The Full Course</h3>
+            <span class="text-sm font-semibold text-gold-deep uppercase tracking-wider">$399 value</span>
+          </div>
+          <p class="text-ink-soft mt-2">The exact framework I teach my patients at Modern Thyroid Clinic. Lifetime access.</p>
+          <ul class="mt-4 space-y-2 text-ink text-[15px]">
+            <li class="flex gap-2"><span class="text-gold mt-1">✓</span> Read your labs the way a thyroid specialist does</li>
+            <li class="flex gap-2"><span class="text-gold mt-1">✓</span> The right medications, doses & combinations — and how to advocate for them</li>
+            <li class="flex gap-2"><span class="text-gold mt-1">✓</span> Root-cause protocols for Hashimoto's, hypothyroidism & post-thyroidectomy</li>
+            <li class="flex gap-2"><span class="text-gold mt-1">✓</span> Food, supplements & lifestyle that actually move the needle</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="flex gap-5 py-8 border-b border-ink/10">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-teal/10 flex items-center justify-center text-3xl">📕</div>
+        <div class="flex-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-serif text-2xl text-teal-deep font-semibold"><em>Take Back Your Thyroid</em> — The Book</h3>
+            <span class="text-sm font-semibold text-gold-deep uppercase tracking-wider">Free, shipped</span>
+          </div>
+          <p class="text-ink-soft mt-2">My brand-new book, with a foreword by Dr. Izabella Wentz. Yours free with this offer. We cover shipping.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="flex gap-5 pt-8">
+        <div class="flex-shrink-0 w-14 h-14 rounded-2xl bg-teal/10 flex items-center justify-center text-3xl">🎁</div>
+        <div class="flex-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-serif text-2xl text-teal-deep font-semibold">The Companion Resource Vault</h3>
+            <span class="text-sm font-semibold text-gold-deep uppercase tracking-wider">Free with book</span>
+          </div>
+          <p class="text-ink-soft mt-2">Downloads, lab cheat sheets, food guides, and the exact tools my clinicians use every day.</p>
+        </div>
+      </div>
+
+      <!-- Total -->
+      <div class="mt-10 pt-8 border-t-2 border-dashed border-gold/40 text-center">
+        <div class="text-ink-soft">
+          Total value: <span class="line-through">$400+</span>
+        </div>
+        <div class="font-serif text-5xl lg:text-6xl text-teal-deep font-semibold mt-1">
+          Today: <span class="text-gold">$39</span>
+        </div>
+
+        <a href="#" class="gold-btn text-white px-8 py-5 rounded-full text-lg font-semibold tracking-wide inline-flex items-center justify-center gap-2 mt-8 w-full sm:w-auto">
+          Yes — Send Me the Course + My Free Book →
+        </a>
+
+        <div class="mt-5 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs text-ink-soft">
+          <span>🔒 Secure checkout</span>
+          <span>💳 Stripe</span>
+          <span>✓ Instant course access</span>
+          <span>✓ 30-day guarantee</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="bg-teal py-20 lg:py-28 relative">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10 text-center">
+    <div class="eyebrow text-gold mb-4">Trusted by Thousands of Thyroid Patients</div>
+    <h2 class="font-serif text-4xl lg:text-5xl text-cream font-semibold leading-tight">
+      This isn't another wellness opinion.<br/>It's the protocol that works.
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-5 mt-14 text-left">
+      <div class="bg-cream rounded-2xl p-7">
+        <div class="text-gold text-xl mb-3">★★★★★</div>
+        <p class="font-serif italic text-lg text-ink leading-snug">"I'd been on the same dose of Synthroid for 12 years and was told I was 'optimized.' Two months on McCall's protocol and I felt like myself again for the first time since my 20s."</p>
+        <div class="mt-4 text-sm text-ink-soft"><span class="font-semibold text-ink">Sarah K.</span> · Hashimoto's patient</div>
+      </div>
+      <div class="bg-cream rounded-2xl p-7">
+        <div class="text-gold text-xl mb-3">★★★★★</div>
+        <p class="font-serif italic text-lg text-ink leading-snug">"Every doctor told me my numbers were fine. McCall was the first person who actually listened — and the first plan that actually worked."</p>
+        <div class="mt-4 text-sm text-ink-soft"><span class="font-semibold text-ink">Jennifer M.</span> · Post-thyroidectomy</div>
+      </div>
+      <div class="bg-cream rounded-2xl p-7">
+        <div class="text-gold text-xl mb-3">★★★★★</div>
+        <p class="font-serif italic text-lg text-ink leading-snug">"This course gave me the language to advocate for myself. I walked into my next appointment and finally got the labs and medication I needed."</p>
+        <div class="mt-4 text-sm text-ink-soft"><span class="font-semibold text-ink">Amanda T.</span> · Hypothyroid</div>
+      </div>
+    </div>
+
+    <!-- Wentz endorsement -->
+    <div class="mt-16 max-w-2xl mx-auto bg-cream/10 border border-cream/20 backdrop-blur-sm rounded-2xl p-8">
+      <div class="w-16 h-16 rounded-full bg-cream/20 mx-auto mb-4 flex items-center justify-center text-cream/60 text-xs">[Wentz]</div>
+      <p class="font-serif italic text-xl text-cream leading-snug">"McCall is doing the work that thyroid patients have been waiting decades for. <em>Take Back Your Thyroid</em> is essential reading."</p>
+      <div class="mt-4 text-sm text-cream/80"><span class="font-semibold text-gold">Dr. Izabella Wentz, PharmD</span> · NYT Bestselling Author of <em>Hashimoto's Protocol</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-cream py-20 lg:py-28">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-5">
+      <div class="aspect-[4/5] bg-gradient-to-br from-teal/30 to-gold/20 rounded-3xl flex items-center justify-center text-ink-soft text-sm card-glow">
+        [McCall headshot — warm, natural light]
+      </div>
+    </div>
+    <div class="lg:col-span-7">
+      <div class="eyebrow text-teal mb-4">Meet the Author</div>
+      <h2 class="font-serif text-4xl lg:text-5xl text-teal-deep font-semibold leading-tight">
+        I built the practice I wish had existed when I was the patient.
+      </h2>
+      <div class="mt-6 space-y-5 text-lg text-ink-soft leading-relaxed">
+        <p>I'm <span class="font-semibold text-ink">McCall McPherson, PA-C</span> — founder of <span class="font-semibold text-ink">Modern Thyroid Clinic</span>, one of the most-referred thyroid practices in the country.</p>
+        <p>I didn't set out to become a thyroid specialist. I became one because the system failed me as a patient — and I refused to let it keep failing the millions of women going through the same thing.</p>
+        <p>For the last 15+ years, I've helped thousands of patients restore their energy, lose the weight, clear the brain fog, and reclaim the version of themselves they thought they'd lost. <em>Take Back Your Thyroid</em> is the culmination of everything I've learned.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE MODULES -->
+<section class="bg-cream-warm py-20 lg:py-28">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10">
+    <div class="text-center mb-14">
+      <div class="eyebrow text-teal mb-4">Inside Thyroid Empowered</div>
+      <h2 class="font-serif text-4xl lg:text-5xl text-teal-deep font-semibold leading-tight">
+        Six modules. One transformation.
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- module card -->
+      <div class="bg-white rounded-2xl p-7 card-glow border border-cream">
+        <div class="font-serif text-5xl text-gold font-semibold mb-3">01</div>
+        <h3 class="font-serif text-xl text-teal-deep font-semibold">Understanding Your Thyroid</h3>
+        <p class="text-ink-soft mt-2 text-[15px]">The biology your doctor never explained.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow border border-cream">
+        <div class="font-serif text-5xl text-gold font-semibold mb-3">02</div>
+        <h3 class="font-serif text-xl text-teal-deep font-semibold">Reading Your Labs Like a Specialist</h3>
+        <p class="text-ink-soft mt-2 text-[15px]">The numbers, the ranges, the red flags.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow border border-cream">
+        <div class="font-serif text-5xl text-gold font-semibold mb-3">03</div>
+        <h3 class="font-serif text-xl text-teal-deep font-semibold">The Right Medication, the Right Dose</h3>
+        <p class="text-ink-soft mt-2 text-[15px]">T4, T3, NDT — and how to advocate for them.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow border border-cream">
+        <div class="font-serif text-5xl text-gold font-semibold mb-3">04</div>
+        <h3 class="font-serif text-xl text-teal-deep font-semibold">The Root-Cause Protocol</h3>
+        <p class="text-ink-soft mt-2 text-[15px]">Hashimoto's, hypothyroidism & post-thyroidectomy paths.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow border border-cream">
+        <div class="font-serif text-5xl text-gold font-semibold mb-3">05</div>
+        <h3 class="font-serif text-xl text-teal-deep font-semibold">Food, Supplements & Lifestyle</h3>
+        <p class="text-ink-soft mt-2 text-[15px]">What actually moves the needle.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 card-glow border border-cream">
+        <div class="font-serif text-5xl text-gold font-semibold mb-3">06</div>
+        <h3 class="font-serif text-xl text-teal-deep font-semibold">Your Long-Term Plan</h3>
+        <p class="text-ink-soft mt-2 text-[15px]">How to stay optimized for life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="bg-cream py-20 lg:py-28">
+  <div class="max-w-3xl mx-auto px-6 lg:px-10">
+    <div class="text-center mb-12">
+      <div class="eyebrow text-teal mb-4">Questions, Answered</div>
+      <h2 class="font-serif text-4xl lg:text-5xl text-teal-deep font-semibold leading-tight">
+        Everything you need to know.
+      </h2>
+    </div>
+
+    <div class="space-y-3">
+      <details class="bg-cream-warm rounded-xl p-6 group" open>
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-serif text-xl text-teal-deep font-semibold">When will my book ship?</span>
+          <span class="chev text-gold text-2xl">⌄</span>
+        </summary>
+        <p class="text-ink-soft mt-3 leading-relaxed">The day it launches. We'll email you tracking the moment it's on its way.</p>
+      </details>
+      <details class="bg-cream-warm rounded-xl p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-serif text-xl text-teal-deep font-semibold">Do I get the course right now?</span>
+          <span class="chev text-gold text-2xl">⌄</span>
+        </summary>
+        <p class="text-ink-soft mt-3 leading-relaxed">Yes — instant access the second you check out.</p>
+      </details>
+      <details class="bg-cream-warm rounded-xl p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-serif text-xl text-teal-deep font-semibold">Is this really $399 of value for $39?</span>
+          <span class="chev text-gold text-2xl">⌄</span>
+        </summary>
+        <p class="text-ink-soft mt-3 leading-relaxed">Yes. This is a one-time pre-launch offer to get the book into the hands of as many thyroid patients as possible. The course returns to $399 the day the book launches.</p>
+      </details>
+      <details class="bg-cream-warm rounded-xl p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-serif text-xl text-teal-deep font-semibold">What if I already have a copy of the book?</span>
+          <span class="chev text-gold text-2xl">⌄</span>
+        </summary>
+        <p class="text-ink-soft mt-3 leading-relaxed">Gift it. Every thyroid patient you know needs one.</p>
+      </details>
+      <details class="bg-cream-warm rounded-xl p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-serif text-xl text-teal-deep font-semibold">Will you ship internationally?</span>
+          <span class="chev text-gold text-2xl">⌄</span>
+        </summary>
+        <p class="text-ink-soft mt-3 leading-relaxed">Yes — international shipping is available at checkout for a small additional fee.</p>
+      </details>
+      <details class="bg-cream-warm rounded-xl p-6 group">
+        <summary class="flex items-center justify-between gap-4">
+          <span class="font-serif text-xl text-teal-deep font-semibold">What's your guarantee?</span>
+          <span class="chev text-gold text-2xl">⌄</span>
+        </summary>
+        <p class="text-ink-soft mt-3 leading-relaxed">30-day money-back guarantee on the course. Try it. If it's not for you, we'll refund you in full — and you can keep the book.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="bg-teal-deep py-24 lg:py-32 relative overflow-hidden">
+  <svg class="absolute -left-10 -top-10 w-96 opacity-10 text-gold" viewBox="0 0 200 200" fill="currentColor">
+    <path d="M100 20c-30 30-50 60-50 100s30 60 50 60 50-20 50-60-20-70-50-100z"/>
+  </svg>
+  <svg class="absolute -right-20 -bottom-10 w-96 opacity-10 text-gold" viewBox="0 0 200 200" fill="currentColor">
+    <path d="M100 20c-30 30-50 60-50 100s30 60 50 60 50-20 50-60-20-70-50-100z"/>
+  </svg>
+  <div class="relative max-w-3xl mx-auto px-6 lg:px-10 text-center">
+    <div class="leaf-divider mb-8"><span class="text-2xl">❦</span></div>
+    <h2 class="font-serif text-4xl lg:text-6xl text-cream font-semibold leading-tight">
+      You've waited long enough<br/>to feel like yourself.
+    </h2>
+    <p class="mt-6 text-cream/80 text-lg max-w-xl mx-auto">
+      Get the course today. Get the book at launch. Take your thyroid back.
+    </p>
+    <a href="#offer" class="gold-btn text-white px-10 py-5 rounded-full text-lg font-semibold tracking-wide inline-flex items-center justify-center gap-2 mt-10">
+      Claim My $39 Bundle →
+    </a>
+    <p class="mt-5 text-xs uppercase tracking-widest text-cream/60">
+      Limited pre-launch offer · Price returns to $399 at launch
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink text-cream/70 py-12">
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 grid md:grid-cols-3 gap-8 items-center">
+    <div>
+      <div class="font-serif text-xl text-cream">Take Back Your <span class="text-gold">Thyroid</span></div>
+      <div class="text-sm mt-1 text-cream/60">By McCall McPherson, PA-C</div>
+    </div>
+    <div class="flex flex-wrap justify-center gap-x-5 gap-y-2 text-sm">
+      <a href="#offer" class="hover:text-gold">The Offer</a>
+      <a href="#about" class="hover:text-gold">About</a>
+      <a href="#faq" class="hover:text-gold">FAQ</a>
+      <a href="#" class="hover:text-gold">Contact</a>
+      <a href="#" class="hover:text-gold">Privacy</a>
+      <a href="#" class="hover:text-gold">Terms</a>
+    </div>
+    <div class="flex md:justify-end gap-4 text-cream/70">
+      <a href="#" aria-label="Instagram" class="hover:text-gold">IG</a>
+      <a href="#" aria-label="TikTok" class="hover:text-gold">TT</a>
+      <a href="#" aria-label="YouTube" class="hover:text-gold">YT</a>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-6 lg:px-10 mt-8 pt-6 border-t border-cream/10 text-xs text-cream/50 text-center">
+    © 2026 Modern Thyroid Clinic. All rights reserved. · This site provides educational information and is not a substitute for medical advice from a qualified provider.
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-cream/95 backdrop-blur border-t border-ink/10 p-3">
+  <a href="#offer" class="gold-btn text-white block text-center py-3.5 rounded-full font-semibold tracking-wide">
+    Get the Bundle — $39 →
+  </a>
+</div>
+
+</body>
+</html>
